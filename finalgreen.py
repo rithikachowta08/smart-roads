@@ -9,7 +9,7 @@ from time import *
 
 f1, f2, last_beep = False, False, 0  
 
-def beep():			                   # called when cars detected on both sides
+def beep():			       # called when cars detected on both sides
     global last_beep
     if int(time()-last_beep) > 5:      # to ensure gap of atleast 5 seconds between consecutive beeps
         setmode(BOARD)                 # consider physical location number i.e pin number not GPIO number
@@ -64,9 +64,9 @@ while True:
     cars2, rejectlevels2, weights2= car_cascade.detectMultiScale3(gray2, scaleFactor=1.2,minNeighbors=70,
     minSize=(120,120),maxSize=(300,300),outputRejectLevels=True)
 
-    trucks1, rejectlevels3, weights3 = car_cascade.detectMultiScale3(gray1, scaleFactor=1.5,minNeighbors=700,
+    trucks1, rejectlevels3, weights3 = truck_cascade.detectMultiScale3(gray1, scaleFactor=1.5,minNeighbors=700,
     minSize=(90,110),maxSize=(320,360),outputRejectLevels=True)
-    trucks2, rejectlevels4, weights4= car_cascade.detectMultiScale3(gray2, scaleFactor=1.2,minNeighbors=760,
+    trucks2, rejectlevels4, weights4= truck_cascade.detectMultiScale3(gray2, scaleFactor=1.2,minNeighbors=760,
     minSize=(90,110),maxSize=(320,360),outputRejectLevels=True)
 
     bike1, rejectlevels5, weights5 = bike_cascade.detectMultiScale3(gray1, scaleFactor=1.7,minNeighbors=790,
