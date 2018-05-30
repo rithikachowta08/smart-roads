@@ -12,8 +12,11 @@ Our area of study includes **IoT, machine learning** and **computer vision**.
 ## Methodology:
 
 Vehicles speeding along a curve are not aware of the presence of vehicles coming from the other direction. Here, a system is proposed to alert drivers going around a blind curve to the presence of oncoming vehicles.
+
 • Cameras, LED warning lights and piezoelectric buzzers are mounted on a pole which is then connected to a Raspberry Pi and video from the cameras is processed to detect oncoming vehicles.
+
 • XML Classifiers for cars, trucks and bikes are generated using LBP Cascade training. The live video feed from two cameras placed on either side of the curve is given to the OpenCV algorithm to detect presence of vehicles. If vehicles approaching on both the sides of the curve are detected, the buzzers and lights are activated, thus alerting the drivers to be aware of the incoming vehicle. Once they are alerted with red LEDs, one of the two green LEDs will glow indicating that particular vehicle to move.
+
 • The red LEDs and buzzers will be switched on for specified amount of time indicating the sign of warning the driver and then green LEDs will glow to let vehicles to cross depending on the program.
 
 ## [Demo](https://www.youtube.com/watch?v=JA7LK_PBREA) 
