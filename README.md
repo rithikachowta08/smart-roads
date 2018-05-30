@@ -1,6 +1,36 @@
 # Smart Roads - Real time Vehicle Collision Prevention System
 Final year CS project - Rithika, Priya, Sharan
 
+## Hardware Pre-requisites:
+
+- Raspberry Pi 3 B
+
+- 16 GB, class 10 Sandisk microSD card
+
+- USB webcameras x 2
+
+- Red LEDs x 2
+
+- 330Ω Resistors x 2
+
+- Green LEDs x 2
+
+- Buzzers x 2
+
+- Powered USB hub
+
+- Jumper wires to connect the GPIO components
+
+- Mouse, keyboard, monitor
+
+## Software Pre-requisites:
+
+- Python 3
+
+- OpenCV 3.3.0
+
+- Raspbian Stretch 
+
 ## Methodology:
 
 Vehicles speeding along a blind curve are not aware of the presence of vehicles coming from the other direction. Here, a system is proposed to alert drivers going around a blind curve to the presence of oncoming vehicles.
